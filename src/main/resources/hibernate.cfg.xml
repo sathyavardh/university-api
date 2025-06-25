@@ -1,0 +1,27 @@
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- JDBC Database Connection Settings -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/universitydb</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">2003</property>
+
+        <!-- SQL Dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <!-- Hibernate Settings -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property> <!-- update / validate / create / create-drop -->
+
+        <!-- Annotated Classes -->
+        <mapping class="org.sathya.model.Student"/>
+        <mapping class="org.sathya.model.StudentProfile"/>
+        <mapping class="org.sathya.model.Course"/>
+        <mapping class="org.sathya.model.Department"/>
+        <mapping class="org.sathya.model.Teacher"/>
+
+    </session-factory>
+</hibernate-configuration>
