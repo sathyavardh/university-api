@@ -2,24 +2,6 @@
 
 A simple Java + Hibernate-based University API using `HttpServer`, supporting entity relationships like students, departments, teachers, and courses — with full CRUD operations.
 
----
-
-## 📦 Project Structure
-
-src/
-└── main/
-└── java/
-└── org/
-└── sathya/
-├── config/ → Hibernate configuration
-├── dao/ → DAO classes for DB operations
-├── handler/ → HttpServer route handlers
-├── model/ → Entity models (Student, Department, etc.)
-├── servlet/ → Servlet-based controllers (optional)
-├── SimpleHttpServer.java → Main server class
-└── Main.java → App launcher
----
-
 ## 🧹 Entity Relationships (Hibernate)
 
 ### 🧑‍🎓 Student
